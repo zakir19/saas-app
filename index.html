@@ -4,25 +4,25 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/public/images/logos/xora.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xora: React GSAP Animation Dashboard for Smooth SaaS UI Transitions | By Zakir Husain Patel</title>
-    <meta name="description" content="Build fluid, responsive animations for your SaaS apps with Xora – a modern React dashboard powered by GSAP. Optimize UI transitions, enhance user experience, and deploy fast. Free demo by full-stack dev Zakir Husain Patel." />
+    <title>Xora: React GSAP Dashboard for Smooth SaaS Animations</title>
+    <meta name="description" content="Xora: Build stunning GSAP animations in React for SaaS UIs. Responsive, 60fps transitions. Free demo by Zakir Husain Patel – start optimizing today." />
     <meta name="keywords" content="react gsap animation dashboard, gsap saas tool, smooth react ui animations, vite gsap transitions, saas animation library, react animation examples 2025" />
     <link rel="canonical" href="https://xora-front.vercel.app/" />
-    <meta property="og:title" content="Xora: React GSAP Animation Dashboard for SaaS" />
-    <meta property="og:description" content="Discover Xora, the ultimate React tool for GSAP-powered animations in SaaS UIs. Seamless transitions, 60fps performance." />
+    <meta property="og:title" content="Xora: React GSAP Dashboard for SaaS Animations" />
+    <meta property="og:description" content="Elevate your SaaS with fluid GSAP animations in React. Discover Xora's responsive dashboard – free demo included." />
     <meta property="og:image" content="/public/images/logos/xora.png" />
     <meta property="og:url" content="https://xora-front.vercel.app/" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Xora: React GSAP Animation Dashboard" />
-    <meta name="twitter:description" content="Power your SaaS with GSAP animations in React. Try Xora now!" />
+    <meta name="twitter:title" content="Xora: React GSAP Dashboard" />
+    <meta name="twitter:description" content="Unlock smooth animations for your SaaS app with Xora. Try the React + GSAP demo now!" />
     <meta name="twitter:image" content="/public/images/logos/x.svg" />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "Xora",
-      "description": "Modern SaaS dashboard for React GSAP animations",
+      "description": "Modern React dashboard for GSAP-powered SaaS animations",
       "applicationCategory": "DeveloperApplication",
       "operatingSystem": "Web",
       "offers": {
@@ -40,9 +40,55 @@
     }
     </script>
     <meta name="robots" content="index, follow" />
+    <style>
+      /* Fallback styles: Hide static SEO content when JS loads React */
+      .seo-fallback { display: block; }
+      .seo-fallback.hidden { display: none; }
+      /* Basic fallback styling for better UX */
+      .seo-fallback { max-width: 800px; margin: 0 auto; padding: 2rem; font-family: system-ui, sans-serif; line-height: 1.6; }
+      .seo-fallback h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+      .seo-fallback h2 { font-size: 1.8rem; margin-top: 2rem; }
+      .seo-fallback nav ul { list-style: none; padding: 0; display: flex; gap: 1rem; flex-wrap: wrap; }
+      .seo-fallback nav a { text-decoration: none; color: #0070f3; }
+    </style>
   </head>
   <body>
+    <!-- Static SEO fallback: Hidden by JS after React mounts -->
+    <div id="seo-fallback" class="seo-fallback">
+      <h1>Xora: React GSAP Animation Dashboard for SaaS</h1>
+      <p>Build fluid, responsive animations for your SaaS apps with Xora – powered by GSAP for seamless UI transitions.</p>
+      
+      <nav>
+        <h2>Explore Xora</h2>
+        <ul>
+          <li><a href="#demo">Live Demo</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#docs">Documentation</a></li>
+          <li><a href="https://github.com/zakir19/saas-app">GitHub Repo</a></li>
+        </ul>
+      </nav>
+      
+      <h2>Key Features</h2>
+      <ul>
+        <li><strong>GSAP-Powered Transitions:</strong> Smooth 60fps animations for modern UIs.</li>
+        <li><strong>Responsive Design:</strong> Works on all devices with Vite optimization.</li>
+        <li><strong>Easy Integration:</strong> Drop into your React SaaS project today.</li>
+      </ul>
+      
+      <h3>Built by Zakir Husain Patel</h3>
+      <p>Full-stack developer | <a href="https://zakirhusain-portfolio.vercel.app/">Portfolio</a></p>
+    </div>
+    
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Hide fallback once React loads (for better UX)
+      document.addEventListener('DOMContentLoaded', () => {
+        const fallback = document.getElementById('seo-fallback');
+        if (document.getElementById('root').children.length > 0) {
+          fallback.classList.add('hidden');
+        }
+      });
+    </script>
   </body>
 </html>
